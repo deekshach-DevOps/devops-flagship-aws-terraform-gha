@@ -35,5 +35,5 @@ jobs:
       - name: Terraform validate
         run: terraform validate
 
-      - name: Terraform plan (no backend)
-        run: terraform plan -input=false -lock=false
+      - name: Terraform plan (static, no AWS creds)
+        run: terraform plan -input=false -lock=false -refresh=false

@@ -13,3 +13,8 @@ cd terraform
 terraform init -backend=false
 terraform validate
 terraform plan
+
+Note: CI runs fmt, validate, and a static plan -refresh=false to avoid storing cloud credentials. 
+
+
+
